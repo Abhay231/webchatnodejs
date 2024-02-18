@@ -11,7 +11,7 @@ user = prompt('enter a new user')
 addMessage('you joined')
 // add message to user
 socket.emit('new-user', user)
-
+// add message 
 socket.on('user-connected', name => {
   addMessage(`${name} connected`)
 })
