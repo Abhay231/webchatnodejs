@@ -9,7 +9,7 @@ const messageInput = document.getElementById('message-input')
 
 user = prompt('enter a new user')
 addMessage('you joined')
-
+// add message to user
 socket.emit('new-user', user)
 
 socket.on('user-connected', name => {
